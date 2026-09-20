@@ -136,6 +136,23 @@ const SKILLS = [
 
 const RESUME_ENTRIES = [
   {
+    range: "09/2026 — Present",
+    kind: "experience",
+    title: "Software & Data Engineer",
+    org: (
+      <>
+        <a
+          href="https://www.caterpillar.com/"
+          target="_blank"
+          rel="noopener noreferrer">
+          Caterpillar Inc.
+        </a>{" "}
+        — Peoria, IL
+      </>
+    ),
+    detail: [],
+  },
+  {
     range: "01/2026",
     kind: "education",
     title: "M.S. in Software Engineering",
@@ -143,10 +160,21 @@ const RESUME_ENTRIES = [
     detail: ["Member, Associate Computer Machinery Club"],
   },
   {
-    range: "09/2025 — Present",
+    range: "09/2025 — 09/2026",
     kind: "experience",
     title: "ERP Developer",
-    org: "PACSUN — Anaheim, CA",
+    org: (
+      <>
+        <a
+          href="https://www.pacsun.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          PACSUN
+        </a>{" "}
+        — Anaheim, CA
+      </>
+    ),
     detail: [
       "Architected a Python ETL pipeline using PySpark and Pandas processing 100,000+ package IDs daily",
       "Contributed to data migration and validation of 5M+ records using Microsoft Fabric with Azure and Snowflake",
@@ -157,7 +185,18 @@ const RESUME_ENTRIES = [
     range: "05/2024 - 07/2024",
     kind: "experience",
     title: "Full Stack Developer Volunteer",
-    org: "EnCiv - Irvine, CA",
+    org: (
+      <>
+        <a
+          href="https://www.enciv.org/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          EnCiv
+        </a>{" "}
+        — Irvine, CA
+      </>
+    ),
     detail: [
       "Developed UI components with JavaScript and React to attract users",
       "Utilized MongoDB to securely store user data",
@@ -174,7 +213,18 @@ const RESUME_ENTRIES = [
     range: "01/2024 — 04/2024",
     kind: "experience",
     title: "Software Developer Intern",
-    org: "Boardwalk Arcade — San Diego, CA",
+    org: (
+      <>
+        <a
+          href="https://boardwalk-parkway.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Boardwalk Arcade
+        </a>{" "}
+        — San Diego, CA
+      </>
+    ),
     detail: [
       "Designed a relational database maintaining integrity across work orders, users, and departments",
       "Optimized MySQL queries for a 60% reduction in load time (0.5s to 0.2s)",
@@ -784,9 +834,18 @@ export default function Portfolio() {
         </div>
 
         <p className="hero-role">
-          Aspiring <strong>Data Enthusiast</strong>, building pipelines that
-          scale, models that ship, and software that holds up in production.
-        </p>
+  <strong>
+    Software and Data Engineer @{" "}
+    <a
+      href="https://www.caterpillar.com/"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Caterpillar
+    </a>
+  </strong>
+  , building pipelines that scale, models that ship, and software that holds up in production.
+</p>
 
         <div className="hero-tags">
           <span className="tag" style={{ color: CATS.DE.color, borderColor: CATS.DE.color }}>Data Engineering</span>
@@ -806,10 +865,9 @@ export default function Portfolio() {
 
       <Section id="about" tag="about.md">
         <div className="about-text">
-          I'm <strong>Michael Arthur</strong>, an ERP Developer at PACSUN
+          I'm <strong>Michael Arthur</strong>, a Software engineer at Caterpillar
           and Cal State Fullerton alumni. Day to day I build Python pipelines
-          to clean and analyze millions of records across Azure, Snowflake,
-          and AWS, and outside of work I build my own data projects from
+          to clean and analyze millions of records across Azure. and outside of work I build my own data projects from
           ELT pipelines to machine learning models.
         </div>
         <div className="skills-block">
@@ -890,7 +948,7 @@ export default function Portfolio() {
 
       <Section id="contact" tag="contact" title="Let's talk">
         <p style={{ color: "var(--text-muted)", maxWidth: 520, marginBottom: 8 }}>
-          Open to data engineering roles, internships, and interesting
+          Open to data engineering roles and interesting
           problems in general. Reach out any of these ways.
         </p>
         <div className="contact-row">
